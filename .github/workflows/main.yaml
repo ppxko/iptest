@@ -35,7 +35,6 @@ jobs:
           bash ./iptest.sh -t 100
           python ./df_sorted.py
           python ./create_proxyip.py
-          mv realip*.txt oldrealip/
           rm -rf ip.txt
       - name: Commit files
         run: |
