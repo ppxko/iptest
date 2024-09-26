@@ -28,7 +28,7 @@ jobs:
         # timeout-minutes: 360
         run: |
           rm -rf *.csv
-          wget -O IPDBproxy.txt  https://raw.githubusercontent.com/ppxko/find-x/refs/heads/main/fancy/real_ip.txt
+          wget -O IPDBproxy.txt  ${{ secrets.iseeu }}
           cp raw_ip.txt ip.txt 
           cat IPDBproxy.txt >> ip.txt 
           rm -rf IPDBproxy.txt 
